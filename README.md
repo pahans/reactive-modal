@@ -41,7 +41,13 @@ ReactiveModal.initDialog('dialog_id', shareDialogInfo);
 ```
 ###Displaying Modal
 you can use bootstrap methods to show/hide modal
+```js
 $('dialog_id').modal('show');
+```
+
+```js
+$('dialog_id').modal('hide');
+```
 
 
 
