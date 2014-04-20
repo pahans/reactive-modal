@@ -10,8 +10,8 @@ How to Use
 mrt add reactive-modal
 ```
 
-###Init your bootstrap modal (preferably inside a rendered function) 
-template is the body of your modal
+###Init your bootstrap modal 
+a meteor template is the body of your modal
 
 ```js
 var shareDialogInfo = {
