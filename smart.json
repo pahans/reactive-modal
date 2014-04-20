@@ -1,7 +1,7 @@
 {
   "name": "reactive-modals",
   "description": "Reactive bootstrap modals for meteor",
-  "homepage": "",
+  "homepage": "https://github.com/pahans/reactive-modal",
   "author": "Pahan Sarathchandra <pahan123@gmail.com>",
   "version": "0.0.1"
 }
