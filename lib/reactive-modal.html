@@ -10,8 +10,8 @@
           {{> template}}
         </div>
         <div class="modal-footer">
-          {{#each buttons}}
-            <button type="button" class="{{class}}" data-dismiss="{{dismiss}}">{{label}}</button>
+          {{#each arrayify buttons}}
+            <button type="button" class="btn {{button.class}} {{name}} reactive-modal-btn" data-dismiss="{{dismiss}}">{{button.label}}</button>
           {{/each}}
         </div>
       </div>

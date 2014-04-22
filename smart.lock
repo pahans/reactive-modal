@@ -1,0 +1,15 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "reactive-modal": {
+        "path": "."
+      }
+    },
+    "packages": {
+      "reactive-modal": {
+        "path": "."
+      }
+    }
+  }
+}

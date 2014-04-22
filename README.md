@@ -17,36 +17,36 @@ a meteor template is the body of your modal
 var shareDialogInfo = {
   template: Template.appShareDialog,
   title: "Share the app",
-  buttons: [
-    {
-      closeModalOnClick: true,
+  buttons: {
+    "cancel": {
       class: 'btn-danger',
-      label: 'Cancel',
-      onclick: function(evt){
-
-      }
+      label: 'Cancel'
     },
-    {
-      closeModalOnClick: true,
+    "ok": {
+      closeModalOnClick: false, // if this is false, dialog doesnt close automatically on click
       class: 'btn-info',
-      label: 'Ok',
-      onclick: function(evt){
+      label: 'Ok'
+    }
 
-      }
-    },
-  ]
+  }
 }
 
-var reactiveDialog = ReactiveModal.initDialog(shareDialogInfo);
+var rd = ReactiveModal.initDialog(shareDialogInfo);
 ```
+
+###button event handling
+rd.buttons.ok.on('click', function(button){
+  // what needs to be done after click ok.
+});
+
 ###Displaying Modal
 you can use show/hide methods to show/hide modal
 ```js
-reactiveDialog.show();
+rd.show();
 ```
 
 ```js
-reactiveDialog.hide();
+rd.hide();
 ```
 
 ### License
