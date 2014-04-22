@@ -35,9 +35,11 @@ var rd = ReactiveModal.initDialog(shareDialogInfo);
 ```
 
 ###button event handling
+```js
 rd.buttons.ok.on('click', function(button){
   // what needs to be done after click ok.
 });
+```
 
 ###Displaying Modal
 you can use show/hide methods to show/hide modal
