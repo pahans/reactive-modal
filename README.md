@@ -50,6 +50,11 @@ rd.show();
 ```js
 rd.hide();
 ```
+### capture modal html element
+```javascript
+  //modalTarget contains the html
+  $(rd.modalTarget).find('[name=inputFooBar]').val()
+```
 
 ### License
 MIT
