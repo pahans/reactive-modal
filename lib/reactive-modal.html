@@ -1,21 +1,21 @@
 <template name="_reactiveModal">
   <div class="modal fade" id="{{key}}" tabindex="-1" role="dialog" aria-labelledby="{{key}}Label" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog {{modalDialogClass}}">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           <h4 class="modal-title" id="{{key}}Label">{{title}}</h4>
         </div>
-        <div class="modal-body">
-          {{> template}}
+        <div class="modal-body {{modalBodyClass}}">
+          <!-- strange: {{> template}} works fine, but with the data context, template is searched inside the data context (the second variable) -->
+          {{> ../template doc}}
         </div>
-        <div class="modal-footer">
+        <div class="modal-footer {{modalFooterClass}}">
           {{#each arrayify buttons}}
-            <button type="button" class="btn {{button.class}} {{name}} reactive-modal-btn" data-dismiss="{{dismiss}}">{{button.label}}</button>
+            <button type="button" id={{button.id}} class="btn {{button.class}} {{name}} reactive-modal-btn" data-dismiss="{{dismiss}}">{{button.label}}</button>
           {{/each}}
         </div>
       </div>
     </div>
   </div>
-
 </template>
