@@ -5,7 +5,4 @@
   "author": "Pahan Sarathchandra <pahan123@gmail.com>",
   "version": "0.1.1",
   "git": "https://github.com/pahans/reactive-modal.git",
-  "packages": {
-    "bootstrap-3": "3.1.1-1"
-  }
 }
