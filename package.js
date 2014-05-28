@@ -3,7 +3,7 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
-  api.use(['underscore', 'bootstrap-3', 'jquery','templating'], 'client');
+  api.use(['underscore', 'jquery','templating'], 'client');
   api.add_files(['lib/reactive-modal.html', 'lib/reactive-modal.js', 'lib/ev.js'], "client");
   api.export('ReactiveModal', ['client']);
 });
