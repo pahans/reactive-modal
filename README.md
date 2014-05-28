@@ -9,7 +9,10 @@ How to Use
 ```js 
 mrt add reactive-modal
 ```
-
+### make sure you have bootstrap-3 or less-bootstrap-3 installed or bootstrap-3 from a other resource.
+```js
+mrt add bootstrap-3
+```
 ###Init your bootstrap modal 
 a meteor template is the body of your modal
 
