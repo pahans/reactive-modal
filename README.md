@@ -17,24 +17,27 @@ mrt add bootstrap-3
 a meteor template is the body of your modal
 
 ```js
-var shareDialogInfo = {
-  template: Template.appShareDialog,
-  title: "Share the app",
-  buttons: {
-    "cancel": {
-      class: 'btn-danger',
-      label: 'Cancel'
-    },
-    "ok": {
-      closeModalOnClick: false, // if this is false, dialog doesnt close automatically on click
-      class: 'btn-info',
-      label: 'Ok'
+Meteor.startup(function(){
+  var shareDialogInfo = {
+    template: Template.appShareDialog,
+    title: "Share the app",
+    buttons: {
+      "cancel": {
+        class: 'btn-danger',
+        label: 'Cancel'
+      },
+      "ok": {
+        closeModalOnClick: false, // if this is false, dialog doesnt close automatically on click
+        class: 'btn-info',
+        label: 'Ok'
+      }
+
     }
-
   }
-}
 
-var rd = ReactiveModal.initDialog(shareDialogInfo);
+  var rd = ReactiveModal.initDialog(shareDialogInfo);
+
+});
 ```
 
 ###button event handling
