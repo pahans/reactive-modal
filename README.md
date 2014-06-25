@@ -21,6 +21,9 @@ Meteor.startup(function(){
   var shareDialogInfo = {
     template: Template.appShareDialog,
     title: "Share the app",
+    modalDialogClass: "share-modal-dialog", //optional
+    modalBodyClass: "share-modal-body", //optional
+    modalFooterClass: "share-modal-footer",//optional
     buttons: {
       "cancel": {
         class: 'btn-danger',
