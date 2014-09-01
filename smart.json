@@ -3,7 +3,7 @@
   "description": "Reactive bootstrap modals for meteor",
   "homepage": "https://github.com/pahans/reactive-modal",
   "author": "Pahan Sarathchandra <pahan123@gmail.com>",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "git": "https://github.com/pahans/reactive-modal.git",
   "packages": {}
 }
