@@ -24,6 +24,7 @@ Meteor.startup(function(){
     modalDialogClass: "share-modal-dialog", //optional
     modalBodyClass: "share-modal-body", //optional
     modalFooterClass: "share-modal-footer",//optional
+    removeOnHide: true, //optional. If this is true, modal will be removed from DOM upon hiding
     buttons: {
       "cancel": {
         class: 'btn-danger',
