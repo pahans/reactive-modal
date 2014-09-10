@@ -5,6 +5,11 @@ How to Use
 =========
 ###install it from atmosphere
 
+#### For Meteor 0.9 or Later
+```js
+meteor add pahans:reactive-modal
+```
+#### For older versions than 0.9
 
 ```js 
 mrt add reactive-modal
