@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Reactive bootstrap modals for meteor",
-  version: "1.0.0",
+  version: "1.0.1",
   git: "https://github.com/pahans/reactive-modal.git",
   name: "pahans:reactive-modal"
 });
