@@ -12,7 +12,7 @@
         </div>
         <div class="modal-footer {{modalFooterClass}}">
           {{#each arrayify buttons}}
-            <button type="button" id={{button.id}} class="btn {{button.class}} {{name}} reactive-modal-btn" data-dismiss="{{dismiss}}">{{button.label}}</button>
+            <button type="button" id={{button.id}} class="btn {{button.class}} {{name}} reactive-modal-btn" {{disabled}} data-dismiss="{{dismiss}}">{{button.label}}</button>
           {{/each}}
         </div>
       </div>
