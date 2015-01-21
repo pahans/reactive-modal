@@ -72,7 +72,7 @@ rd.hide();
 ```
 
 ### Controlling disabled state of dialog buttons
-You can set starting disabled / enabled state of each button (disabled = false if not specified in info settings):
+You can set starting disabled / enabled state of each modal dialog button (disabled = false if not specified in info settings):
 ```javascript
     buttons: {
       "add": {
@@ -85,7 +85,7 @@ You can set starting disabled / enabled state of each button (disabled = false i
 Then, call the `disable()` and `enable()` functions on the buttons to reactively change button state (e.g. in an autorun computation):
 
 ```javascript
-Meteor.autorun(function () {
+Tracker.autorun(function () {
   if (aLocalCollection.find().count() == 0) {
     rd.buttons.add.disable();
   } else {
