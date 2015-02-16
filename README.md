@@ -62,16 +62,6 @@ Meteor.startup(function(){
 ```js
 rd.buttons.ok.on('click', function(button){
   // what needs to be done after click ok.
-  // Each call to 'on' on the same ReactiveModal button adds another handler for the same 'click' event
-});
-```
-
-or
-
-```js
-rd.buttons.ok.once('click', function(button){
-  // what needs to be done after click ok.
-  // Each call to 'once' on the same ReactiveModal button replaces the handler for the same 'click' event
 });
 ```
 
@@ -93,33 +83,9 @@ rd.hide();
 ### Modal template data context
 
 Provide a `doc` property on the info options object to provide a data context for your dialog template
-=======
-### Controlling disabled state of dialog buttons
-You can set starting disabled / enabled state of each modal dialog button (disabled = false if not specified in info settings):
-```javascript
-    buttons: {
-      "add": {
-        class: 'btn-primary',
-        label: 'Add',
-        disabled: true
-      },
-```
-
-Then, call the `disable()` and `enable()` functions on the buttons to reactively change button state (e.g. in an autorun computation):
-
-```javascript
-Tracker.autorun(function () {
-  if (aLocalCollection.find().count() == 0) {
-    rd.buttons.add.disable();
-  } else {
-    rd.buttons.add.enable();
-  }
-})
-```
 
 ### License
 MIT
-
 
 
 
