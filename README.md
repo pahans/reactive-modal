@@ -21,6 +21,12 @@ mrt add bootstrap-3
 ###Init your bootstrap modal 
 a meteor template is the body of your modal
 
+```html
+<template name="appShareDialog">
+<p>OK to go ahead and share {{app}}?</p>
+</template>
+```
+
 ```js
 Meteor.startup(function(){
   var shareDialogInfo = {
@@ -41,6 +47,9 @@ Meteor.startup(function(){
         label: 'Ok'
       }
 
+    },
+    doc: {  // Provide data context for Template.appShareDialog
+      app: "My Application"
     }
   }
 
@@ -80,6 +89,10 @@ rd.hide();
   //modalTarget contains the html
   $(rd.modalTarget).find('[name=inputFooBar]').val()
 ```
+
+### Modal template data context
+
+Provide a `doc` property on the info options object to provide a data context for your dialog template
 
 ### License
 MIT
