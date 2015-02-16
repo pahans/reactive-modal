@@ -53,6 +53,16 @@ Meteor.startup(function(){
 ```js
 rd.buttons.ok.on('click', function(button){
   // what needs to be done after click ok.
+  // Each call to 'on' on the same ReactiveModal button adds another handler for the same 'click' event
+});
+```
+
+or
+
+```js
+rd.buttons.ok.once('click', function(button){
+  // what needs to be done after click ok.
+  // Each call to 'once' on the same ReactiveModal button replaces the handler for the same 'click' event
 });
 ```
 
