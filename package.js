@@ -9,7 +9,7 @@ Package.on_use(function (api) {
   if(api.versionsFrom){
     api.versionsFrom('METEOR@0.9.0');
   }
-  api.use(['underscore', 'jquery','templating', 'reactive-var'], 'client');
+  api.use(['underscore', 'jquery','templating', 'reactive-var@1.0.1'], 'client');
   api.add_files(['lib/reactive-modal.html', 'lib/reactive-modal.js', 'lib/ev.js'], "client");
   api.export('ReactiveModal', ['client']);
 });
