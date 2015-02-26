@@ -84,6 +84,23 @@ rd.hide();
 
 Provide a `doc` property on the info options object to provide a data context for your dialog template
 
+### Convenience functions
+
+For any button, you can call the following functions:
+ * .disable()
+ * .enable()
+ * .closeOnClick()
+ * .noCloseOnClick()
+ * .setLabel()
+
+For example, the following code would change the label of the button and make it so that clicking 'ok' a second time would close the modal.
+```js
+rd.buttons.ok.on('click', function(button){
+  rd.buttons.setLabel('Are you sure?');
+  rd.buttons.ok.closeOnClick();
+});
+```
+
 ### License
 MIT
 
