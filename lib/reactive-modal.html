@@ -7,7 +7,7 @@
           <h4 class="modal-title" id="{{key}}Label">{{title}}</h4>
         </div>
         <div class="modal-body {{modalBodyClass}}">
-          <!-- strange: {{> template}} works fine, but with the data context, template is searched inside the data context (the second variable) -->
+          {{!-- strange: {{> template}} works fine, but with the data context, template is searched inside the data context (the second variable) --}}
           {{> ../template doc}}
         </div>
         <div class="modal-footer {{modalFooterClass}}">
