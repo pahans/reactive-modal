@@ -32,7 +32,8 @@ Meteor.startup(function(){
   var shareDialogInfo = {
     template: Template.appShareDialog,
     title: "Share the app",
-    modalDialogClass: "share-modal-dialog", //optional
+    modalContainerClass: "share-modal", //optional
+    modalDialogClass: "share-modal-dialog modal-lg", //optional
     modalBodyClass: "share-modal-body", //optional
     modalFooterClass: "share-modal-footer",//optional
     removeOnHide: true, //optional. If this is true, modal will be removed from DOM upon hiding
