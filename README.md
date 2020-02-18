@@ -1,9 +1,12 @@
 meteor-reactive-modal
 =====================
 
+Not actively maintained
+=======================
+
 How to Use
 =========
-###install it from atmosphere
+### install it from atmosphere
 
 #### For Meteor 0.9 or Later
 ```js
