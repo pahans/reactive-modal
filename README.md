@@ -14,14 +14,14 @@ meteor add pahans:reactive-modal
 ```
 #### For older versions than 0.9
 
-```js 
+```js
 mrt add reactive-modal
 ```
 ### make sure you have bootstrap-3 or less-bootstrap-3 installed or bootstrap-3 from a other resource.
 ```js
 mrt add bootstrap-3
 ```
-###Init your bootstrap modal 
+###Init your bootstrap modal
 a meteor template is the body of your modal
 
 ```html
@@ -35,7 +35,8 @@ Meteor.startup(function(){
   var shareDialogInfo = {
     template: Template.appShareDialog,
     title: "Share the app",
-    modalDialogClass: "share-modal-dialog", //optional
+    modalContainerClass: "share-modal", //optional
+    modalDialogClass: "share-modal-dialog modal-lg", //optional
     modalBodyClass: "share-modal-body", //optional
     modalFooterClass: "share-modal-footer",//optional
     removeOnHide: true, //optional. If this is true, modal will be removed from DOM upon hiding
